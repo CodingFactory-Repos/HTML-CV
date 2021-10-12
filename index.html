@@ -1,16 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mon CV en HTML</title>
 
-        <script type="application/javascript">function headSwiftData(e){e.forEach(e=>
-            document.querySelector("head").innerHTML+=e),
-            console.log("👌 HeadSwift Head Loaded")}</script><script type="application/javascript" src="https://headswift.com/cdn/?head&frameworks=headswift-stats,font-awesome&version=0.1.0,6.0.0-beta2&js"></script> 
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <script type="application/javascript">function headSwiftData(e) {
+            e.forEach(e =>
+                document.querySelector("head").innerHTML += e),
+                console.log("👌 HeadSwift Head Loaded")
+        }</script>
+        <script type="application/javascript"
+            src="https://headswift.com/cdn/?head&frameworks=headswift-stats,font-awesome&version=0.1.0,6.0.0-beta2&js"></script>
     </head>
+
     <body>
-        
+        <nav>
+            <h2 class="title">John Doe<string>!</string>
+            </h2>
+
+            <div class="nav-contents">
+                <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+                <a href="#AboutMe"><i class="fas fa-address-card"></i> À Propos
+                    de Moi</a>
+                <a href="#Experience"><i class="fas fa-star"></i> Mon Experience</a>
+                <a href="#Skills"><i class="fas fa-language"></i> Skills</a>
+                <a href="#RecentWorks"><i class="fas fa-briefcase"></i> Mes
+                    travaux</a>
+                <a href="contact.html"><i class="fas fa-id-card"></i> Contact</a>
+            </div>
+        </nav>
+
+        <header>
+            <figure>
+                <img src="https://picsum.photos/200" alt="Jonh Doe Profil Pic"
+                    class="ProfilPic">
+            </figure>
+
+            <h1 class="name">Jonh Doe</h1>
+            <p class="description">I'm software developer, bitch</p>
+
+            <div class="social">
+                <a href="https://discord.com" target="_blank">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+            <a href="contact.html" class="contact red-button">Contactez-moi</a>
+        </header>
+
+        <main>
+            <section class="AboutMe" id="AboutMe">
+                <div class="section-title">
+                    <h2>À propos de moi</h2>
+                </div>
+
+                <div class="section-content">
+                    <figure>
+                        <img src="https://picsum.photos/200" />
+                    </figure>
+
+                    <div class="presentation">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Magnam sunt deleniti temporibus maiores
+                            provident cumque mollitia ea omnis eos tempora
+                            repellendus
+                            necessitatibus debitis suscipit quis
+                            voluptate id, ullam sint molestiae.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="Experience" id="Experience">
+                <div class="section-title">
+                    <h2>Mon Expérience</h2>
+                </div>
+
+                <div class="section-content">
+                    <div class="section-content-items">
+                        <div class="experience-item">
+                            <div class="left">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div class="vertical-line"></div>
+                            </div>
+    
+                            <div class="right">
+                                <h3 class="work-duration">2019 - Present</h3>
+                                <h2 class="work-title">Développeur Web</h2>
+                                <p class="work-description">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing
+                                    elit.
+                                    Magnam sunt deleniti temporibus maiores
+                                    provident cumque mollitia ea omnis eos tempora
+                                    repellendus
+                                    necessitatibus debitis suscipit quis
+                                    voluptate id, ullam sint molestiae.</p>
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <div class="left">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div class="vertical-line"></div>
+                            </div>
+    
+                            <div class="right">
+                                <h3 class="work-duration">2019 - Present</h3>
+                                <h2 class="work-title">Développeur Web</h2>
+                                <p class="work-description">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing
+                                    elit.
+                                    Magnam sunt deleniti temporibus maiores
+                                    provident cumque mollitia ea omnis eos tempora
+                                    repellendus
+                                    necessitatibus debitis suscipit quis
+                                    voluptate id, ullam sint molestiae.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-content-items">
+                        <div class="experience-item">
+                            <div class="left">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div class="vertical-line"></div>
+                            </div>
+    
+                            <div class="right">
+                                <h3 class="work-duration">2019 - Present</h3>
+                                <h2 class="work-title">Développeur Web</h2>
+                                <p class="work-description">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing
+                                    elit.
+                                    Magnam sunt deleniti temporibus maiores
+                                    provident cumque mollitia ea omnis eos tempora
+                                    repellendus
+                                    necessitatibus debitis suscipit quis
+                                    voluptate id, ullam sint molestiae.</p>
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <div class="left">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div class="vertical-line"></div>
+                            </div>
+    
+                            <div class="right">
+                                <h3 class="work-duration">2019 - Present</h3>
+                                <h2 class="work-title">Développeur Web</h2>
+                                <p class="work-description">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing
+                                    elit.
+                                    Magnam sunt deleniti temporibus maiores
+                                    provident cumque mollitia ea omnis eos tempora
+                                    repellendus
+                                    necessitatibus debitis suscipit quis
+                                    voluptate id, ullam sint molestiae.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="Skills" id="Skills">
+                <div class="section-title">
+                    <h2>Skills</h2>
+                </div>
+
+                <div class="section-content">
+                    <figure id="Skills-1">
+                        <img src="assets/images/langs/headswift.png" />
+                    </figure>
+
+                    <figure id="Skills-2">
+                        <img src="assets/images/langs/JQuery.png" />
+                    </figure>
+
+                    <figure id="Skills-3">
+                        <img src="assets/images/langs/PHP.png" />
+                    </figure>
+
+                    <figure id="Skills-4">
+                        <img src="assets/images/langs/HTML.png" />
+                    </figure>
+
+                    <figure id="Skills-5">
+                        <img src="assets/images/langs/CSS.png" />
+                    </figure>
+
+                    <figure id="Skills-6">
+                        <img src="assets/images/langs/JS.png" />
+                    </figure>
+
+                    <figure id="Skills-7">
+                        <img src="assets/images/langs/SASS.png" />
+                    </figure>
+
+                    <figure id="Skills-8">
+                        <img src="assets/images/langs/Bootstrap.png" />
+                    </figure>
+                </div>
+            </section>
+
+            <section class="RecentWorks" id="RecentWorks">
+                <div class="section-title">
+                    <h2>Mes travaux récent</h2>
+                </div>
+
+                <div class="section-content">
+                    <div class="recent-work-item">
+                        <figure class="top">
+                            <img src="https://api.apiflash.com/v1/urltoimage?access_key=d09c83df9a644874bf04cda4f0f04b6a&url=https://headswift.com/" />
+                        </figure>
+
+                        <div class="bottom">
+                            <h3 class="work-title">Titre du projet</h3>
+                            <p class="work-description">Lorem ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit.
+                                Magnam sunt deleniti temporibus maiores
+                                provident cumque mollitia ea omnis eos tempora
+                                repellendus
+                                necessitatibus debitis suscipit quis
+                                voluptate id, ullam sint molestiae.</p>
+                        </div>
+                    </div>
+
+                    <div class="recent-work-item">
+                        <figure class="top">
+                            <img src="https://api.apiflash.com/v1/urltoimage?access_key=d09c83df9a644874bf04cda4f0f04b6a&url=https://headswift.com/" />
+                        </figure>
+
+                        <div class="bottom">
+                            <h3 class="work-title">Titre du projet</h3>
+                            <p class="work-description">Lorem ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit.
+                                Magnam sunt deleniti temporibus maiores
+                                provident cumque mollitia ea omnis eos tempora
+                                repellendus
+                                necessitatibus debitis suscipit quis
+                                voluptate id, ullam sint molestiae.</p>
+                        </div>
+                    </div>
+
+                    <div class="recent-work-item">
+                        <figure class="top">
+                            <img src="https://api.apiflash.com/v1/urltoimage?access_key=d09c83df9a644874bf04cda4f0f04b6a&url=https://headswift.com/" />
+                        </figure>
+
+                        <div class="bottom">
+                            <h3 class="work-title">Titre du projet</h3>
+                            <p class="work-description">Lorem ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit.
+                                Magnam sunt deleniti temporibus maiores
+                                provident cumque mollitia ea omnis eos tempora
+                                repellendus
+                                necessitatibus debitis suscipit quis
+                                voluptate id, ullam sint molestiae.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="title">
+                <h2>John Doe<string>!</string>
+                </h2>
+            </div>
+            <div class="social">
+                <h2>Social</h2>
+
+                <ul>
+                    <li>
+                        <a href="http://instagram.com/" target="_blank">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="http://snapchat.com/" target="_blank">
+                            <i class="fab fa-snapchat"></i> Snapchat
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://discord.com" target="_blank">
+                            <i class="fab fa-discord"></i> Discord
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="contact">
+                <h2>Contact</h2>
+
+                <ul>
+                    <li>
+                        <a href="mailto:contact@gmail.com" target="_blank"">
+                            contact@gmail.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </body>
 </html>

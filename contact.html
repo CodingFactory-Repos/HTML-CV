@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mon CV en HTML</title>
+
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <script type="application/javascript">function headSwiftData(e) {
+            e.forEach(e =>
+                document.querySelector("head").innerHTML += e),
+                console.log("👌 HeadSwift Head Loaded")
+        }</script>
+        <script type="application/javascript"
+            src="https://headswift.com/cdn/?head&frameworks=headswift-stats,font-awesome&version=0.1.0,6.0.0-beta2&js"></script>
+    </head>
+
+    <body>
+        <nav>
+            <h2 class="title">John Doe<string>!</string>
+            </h2>
+
+            <div class="nav-contents">
+                <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+                <a href="index.html#AboutMe"><i class="fas fa-address-card"></i> À Propos
+                    de Moi</a>
+                <a href="index.html#Experience"><i class="fas fa-star"></i> Mon Experience</a>
+                <a href="index.html#Skills"><i class="fas fa-language"></i> Skills</a>
+                <a href="index.html#RecentWorks"><i class="fas fa-briefcase"></i> Mes
+                    travaux</a>
+                <a href="index.html#GetInTouch"><i class="fas fa-id-card"></i> Contact</a>
+            </div>
+        </nav>
+
+        <main>
+            <section class="Contact" id="Contact">
+                <div class="section-title">
+                    <h2>Contactez-moi</h2>
+                </div>
+
+                <div class="section-content">
+                    <figure>
+                        <img src="https://picsum.photos/200" />
+                    </figure>
+
+                    <div class="contact-form">
+                        <form action="mailto:contact@gmail.com" method="POST" enctype="multipart/form-data" name="Email Form">
+                            <label>Sujet</label>
+                            <input type="text" name="email">
+    
+                            <label>Message</label>
+                            <textarea name="message" id=""></textarea>
+                            
+                            <input type="submit" value="Envoyer">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="title">
+                <h2>John Doe<string>!</string>
+                </h2>
+            </div>
+            <div class="social">
+                <h2>Social</h2>
+
+                <ul>
+                    <li>
+                        <a href="http://instagram.com/" target="_blank">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="http://snapchat.com/" target="_blank">
+                            <i class="fab fa-snapchat"></i> Snapchat
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://discord.com" target="_blank">
+                            <i class="fab fa-discord"></i> Discord
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="contact">
+                <h2>Contact</h2>
+
+                <ul>
+                    <li>
+                        <a href="mailto:contact@gmail.com" target="_blank"">
+                            contact@gmail.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
