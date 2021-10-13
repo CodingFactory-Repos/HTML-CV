@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 @font-face {
   font-family: "FF Mark";
   src: local("FF Mark Bold"), local("FF-Mark-Bold"), url("../fonts/Mark-Bold.woff2") format("woff2"), url("../fonts/Mark-Bold.woff") format("woff"), url("../fonts/Mark-Bold.ttf") format("truetype");
@@ -22,13 +23,52 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: 330px;
-  font-family: "FF Mark", sans-serif;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 900px) {
   body {
     margin-left: 0;
   }
+}
+
+body div.burger-menu {
+  display: none;
+  width: 100%;
+  background-color: #353353 !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 100;
+}
+
+@media screen and (max-width: 900px) {
+  body div.burger-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+body div.burger-menu button {
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  color: #fff;
+  height: 50px;
 }
 
 body nav {
@@ -38,6 +78,7 @@ body nav {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 99;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,12 +96,15 @@ body nav {
 @media screen and (max-width: 900px) {
   body nav {
     display: none;
+    width: 100%;
+    padding-top: 50px;
   }
 }
 
 body nav h2.title {
   color: #fff;
   font-size: 2rem;
+  font-family: "FF Mark", sans-serif;
 }
 
 body nav h2.title string {
@@ -436,6 +480,40 @@ body main section.RecentWorks div.section-content {
 
 body main section.RecentWorks div.section-content div.recent-work-item {
   width: 30%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main section.RecentWorks div.section-content div.recent-work-item:hover {
+  background-color: #353353;
+  border-radius: 30px;
+  width: 35%;
+}
+
+body main section.RecentWorks div.section-content div.recent-work-item:hover div.bottom {
+  width: 90%;
+  margin-bottom: 1em;
+}
+
+body main section.RecentWorks div.section-content div.recent-work-item:hover div.bottom h3.work-title {
+  color: #fff;
+}
+
+body main section.RecentWorks div.section-content div.recent-work-item:hover div.bottom p.work-description {
+  color: #fff;
 }
 
 @media screen and (max-width: 900px) {
@@ -485,7 +563,7 @@ body main section.RecentWorks div.section-content div.recent-work-item div.botto
           justify-content: center;
 }
 
-body main section.RecentWorks div.section-content div.recent-work-item div.bottom h2.work-title {
+body main section.RecentWorks div.section-content div.recent-work-item div.bottom h3.work-title {
   font-size: 20px;
   margin: 10px 0;
 }

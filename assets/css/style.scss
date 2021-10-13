@@ -8,6 +8,8 @@
     font-style: normal;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
 // Variables
 $responsive-width: 900px;
 
@@ -26,10 +28,40 @@ body {
 
     margin-left: 330px;
 
-    font-family: "FF Mark", sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
 
     @media screen and (max-width: $responsive-width) {
         margin-left: 0;
+    }
+
+    div.burger-menu {
+        display: none;
+        width: 100%;
+        background-color: #353353 !important;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        z-index: 100;
+
+        @media screen and (max-width: $responsive-width) {
+            display: flex;
+        }
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        z-index: 100;
+
+        button {
+            background-color: transparent;
+            width: 100%;
+            border: none;
+            color: #fff;
+            height: 50px;
+        }
     }
 
     nav {
@@ -39,6 +71,8 @@ body {
         position: fixed;
         top: 0;
         left: 0;
+
+        z-index: 99;
 
         display: flex;
         flex-direction: column;
@@ -50,11 +84,15 @@ body {
 
         @media screen and (max-width: $responsive-width) {
             display: none;
+            width: 100%;
+            padding-top: 50px;
         }
 
         h2.title {
             color: #fff;
             font-size: 2rem;
+
+            font-family: "FF Mark", sans-serif;
 
             string {
                 color: #ff4c60;
@@ -319,6 +357,31 @@ body {
 
             div.recent-work-item {
                 width: 30%;
+                transition: all 0.3s ease-in-out;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                &:hover {
+                    background-color: #353353;
+                    border-radius: 30px;
+                    width: 35%;
+                    
+                    div.bottom {
+                        width: 90%;
+                        margin-bottom: 1em;
+
+                        h3.work-title {
+                            color: #fff;
+                        }
+
+                        p.work-description {
+                            color: #fff;
+                        }
+                    }
+                }
 
                 @media screen and (max-width: $responsive-width) {
                     width: 90%;
@@ -349,7 +412,7 @@ body {
                     align-items: center;
                     justify-content: center;
 
-                    h2.work-title {
+                    h3.work-title {
                         font-size: 20px;
                         margin: 10px 0;
                     }

@@ -16,13 +16,18 @@
                 console.log("👌 HeadSwift Head Loaded")
         }</script>
         <script type="application/javascript"
-            src="https://headswift.com/cdn/?head&frameworks=headswift-stats,font-awesome&version=0.1.0,6.0.0-beta2&js"></script>
+            src="https://headswift.com/cdn/?head&frameworks=headswift-stats,font-awesome,jquery&version=0.1.0,6.0.0-beta2,3.6.0&js"></script>
+
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     </head>
 
     <body>
+        <div class="burger-menu">
+            <button class="btn-open"><i class="fas fa-bars"></i></button>
+            <button class="btn-close" style="display: none;"><i class="fas fa-close"></i></button>
+        </div>
         <nav>
-            <h2 class="title">John Doe<string>!</string>
-            </h2>
+            <h2 class="title">John Doe<string>!</string></h2>
 
             <div class="nav-contents">
                 <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
@@ -323,5 +328,23 @@
                 </ul>
             </div>
         </footer>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) {
+                $('.btn-open').click(function() {
+                    $(".burger-menu .btn-close").attr("style", "display: block;");
+                    $(".burger-menu .btn-open").attr("style", "display: none;");
+                    $("nav").attr("style", "display: block;");
+                    $("body").attr("style", "margin-left: 330px;");
+                });
+
+                $('.btn-close').click(function() {
+                    $(".burger-menu .btn-close").attr("style", "display: none;");
+                    $(".burger-menu .btn-open").attr("style", "display: block;");
+                    $("nav").attr("style", "display: none;");
+                    $("body").attr("style", "margin-left: 0px;");
+                });
+            });
+        </script>
     </body>
 </html>
