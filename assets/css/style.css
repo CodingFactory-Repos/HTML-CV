@@ -90,7 +90,7 @@ body nav {
       -ms-flex-pack: center;
           justify-content: center;
   border-right: solid 1px rgba(255, 255, 255, 0.1);
-  padding: 0px 0px 0px 40px;
+  padding: 0 0 0 40px;
 }
 
 @media screen and (max-width: 900px) {
@@ -233,7 +233,7 @@ body main section {
 }
 
 body main section div.section-title {
-  margin: 110px 0 60px 0;
+  margin: 110px 0 60px;
 }
 
 @media screen and (max-width: 900px) {
@@ -285,8 +285,8 @@ body main section.AboutMe div.section-content figure img {
 
 body main section.AboutMe div.section-content div.presentation {
   width: 50%;
-  -webkit-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
-          box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+  -webkit-box-shadow: 0 5px 20px 0 rgba(69, 67, 96, 0.1);
+          box-shadow: 0 5px 20px 0 rgba(69, 67, 96, 0.1);
   padding: 30px;
   border-radius: 30px;
 }
@@ -332,10 +332,10 @@ body main section.Experience div.section-content div.section-content-items {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 .5em 1em .5em;
+  margin: 0 .5em 1em;
   width: 50%;
-  -webkit-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
-          box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+  -webkit-box-shadow: 0 5px 20px 0 rgba(69, 67, 96, 0.1);
+          box-shadow: 0 5px 20px 0 rgba(69, 67, 96, 0.1);
   border-radius: 30px;
   padding: 1.5em 1em;
 }
@@ -593,7 +593,7 @@ body main section.Contact div.section-content {
 }
 
 body main section.Contact div.section-content div.section-content {
-  margin: 0px 0 60px 0;
+  margin: 0 0 60px;
 }
 
 body main section.Contact div.section-content figure img {
@@ -605,8 +605,8 @@ body main section.Contact div.section-content figure img {
 
 body main section.Contact div.section-content div.contact-form {
   width: 50%;
-  -webkit-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
-          box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+  -webkit-box-shadow: 0 5px 20px 0 rgba(69, 67, 96, 0.1);
+          box-shadow: 0 5px 20px 0 rgba(69, 67, 96, 0.1);
   padding: 30px;
   border-radius: 30px;
   margin-bottom: 2em;
@@ -746,4 +746,3 @@ a {
 .red-button:hover {
   background-color: #ffd15c;
 }
-/*# sourceMappingURL=style.css.map */
